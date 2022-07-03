@@ -16,7 +16,7 @@ const todayColumn = document.querySelector(`[data-day="${today}"]`); // find ele
 todayColumn.classList.add("current-day"); // set today to correct element in html (as a "today" class – will be assigned cyan color)
 
 
-fetch('../data.json') // does not work locally (unless from local server)
+fetch('data.json') // does not work locally (unless from local server)
   .then(response => response.json())
   .then(data => {
 
