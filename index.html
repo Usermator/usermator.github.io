@@ -1,1 +1,122 @@
-<p>ahoj ahoj</p>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+
+  <title>Frontend Mentor | Expenses chart component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <article class="expenses">
+
+      <header class="expenses__header">
+
+        <h3>My balance</h3>
+
+        <div class="sum-value" data-account-field="balance">$921.48</div>
+
+      </header>
+
+      <section class="expenses__main">
+
+        <h2>Spending - Last 7 days</h2>
+
+        <dl class="expenses__chart">
+
+          <dd class="hidden-value" data-day="1">
+            <span class="expenses__chart-value" data-field-name="day-value">$00.00</span>
+            <span class="expenses__chart-fill" style="height: 15%;"></span>
+            <span class="expenses__chart-text">mon</span>
+          </dd>
+
+          <dd class="hidden-value" data-day="2">
+            <span class="expenses__chart-value" data-field-name="day-value">$00.00</span>
+            <span class="expenses__chart-fill" style="height: 25%;"></span>
+            <span class="expenses__chart-text">tue</span>
+          </dd>
+
+          <dd class="hidden-value" data-day="3">
+            <span class="expenses__chart-value" data-field-name="day-value">$00.00</span>
+            <span class="expenses__chart-fill" style="height: 55%;"></span>
+            <span class="expenses__chart-text">wed</span>
+          </dd>
+
+          <dd data-day="4">
+            <span class="expenses__chart-value" data-field-name="day-value">$00.00</span>
+            <span class="expenses__chart-fill" style="height: 70%;"></span>
+            <span class="expenses__chart-text">thu</span>
+          </dd>
+
+          <dd class="hidden-value" data-day="5">
+            <span class="expenses__chart-value" data-field-name="day-value">$00.00</span>
+            <span class="expenses__chart-fill" style="height: 62%;"></span>
+            <span class="expenses__chart-text">fri</span>
+          </dd>
+
+          <dd class="hidden-value" data-day="6">
+            <span class="expenses__chart-value" data-field-name="day-value">$00.00</span>
+            <span class="expenses__chart-fill" style="height: 30%;"></span>
+            <span class="expenses__chart-text">sat</span>
+          </dd>
+
+          <dd class="hidden-value" data-day="0">
+            <span class="expenses__chart-value" data-field-name="day-value">$00.00</span>
+            <span class="expenses__chart-fill" style="height: 15%;"></span>
+            <span class="expenses__chart-text">sun</span>
+          </dd>
+
+        </dl>
+
+        <div class="expenses__this-month">
+
+          <div class="expenses__monthly-total">
+
+            <h3>Total this month</h3>
+            <div class="sum-value" data-account-field="monthly-spendings">$478.33</div>
+
+          </div>
+
+          <div class="expenses__monthly-change">
+
+            <div class="sum-value" data-account-field="monthly-change">+2.4%</div>
+
+            <h3>from last month</h3>
+
+          </div>
+
+        </div>
+
+      </section>
+
+    </article>
+  </main>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Vít Mareš</a>.
+  </div>
+</body>
+
+<script src="js/script.js"></script>
+
+</html>

@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+:root {
+  --main-color-background: hsl(27, 66%, 92%);
+  --main-color-orange: hsl(10, 79%, 65%);
+  --main-color-cyan: hsl(186, 34%, 60%);
+  --main-color-brown-dark: hsl(25, 47%, 15%);
+  --main-color-brown-medium: hsl(28, 10%, 53%);
+  --main-color-white: hsl(33, 100%, 98%);
+  --main-radius-box: 1.25rem;
+  --main-radius-small: .35rem;
+  --main-padding-header: 1.4rem 2rem;
+  --main-padding-main: 2rem 2rem;
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
+}
+
+* {
+  margin: 0;
+}
+
+/******** TEXTS *************/
+h3 {
+  font-size: 0.6rem;
+  font-weight: 300;
+}
+
+.sum-value {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+/******** MAIN STYLES *************/
+body {
+  background-color: var(--main-color-background);
+  max-width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.expenses {
+  width: 540px;
+  max-width: 540px;
+  height: auto;
+}
+.expenses .expenses__header {
+  background-color: var(--main-color-orange);
+  padding: var(--main-padding-header);
+  border-radius: var(--main-radius-box);
+  position: relative;
+}
+.expenses .expenses__header h3 {
+  font-size: 0.95rem;
+  color: var(--main-color-white);
+  margin-bottom: 0.4rem;
+}
+.expenses .expenses__header .sum-value {
+  font-size: 1.8rem;
+  color: var(--main-color-white);
+}
+.expenses .expenses__header::before {
+  content: "";
+  background-color: var(--main-color-brown-dark);
+  height: 40%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 6%;
+  border-radius: 100vmax;
+}
+.expenses .expenses__header::after {
+  content: "";
+  height: 40%;
+  aspect-ratio: 1/1;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 11%;
+  border-radius: 100vmax;
+  border: 2px solid var(--main-color-white);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.expenses .expenses__main {
+  background-color: var(--main-color-white);
+  padding: var(--main-padding-main);
+  border-radius: var(--main-radius-box);
+  margin-top: 1rem;
+}
+.expenses .expenses__main h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+}
+.expenses .expenses__main .expenses__chart {
+  height: 230px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+.expenses .expenses__main .expenses__chart dd {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  max-width: 14.2857142857%;
+}
+.expenses .expenses__main .expenses__chart dd .expenses__chart-value {
+  width: auto;
+  height: 18%;
+  background-color: var(--main-color-brown-dark);
+  border-radius: var(--main-radius-small);
+  color: var(--main-color-white);
+  padding: 0 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 0.95rem;
+  font-weight: 500;
+  opacity: 0;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.expenses .expenses__main .expenses__chart dd .expenses__chart-fill {
+  width: 75%;
+  margin-bottom: 0.4rem;
+  margin-top: 0.35rem;
+  background-color: var(--main-color-orange);
+  border-radius: var(--main-radius-small);
+  max-height: 70%;
+}
+.expenses .expenses__main .expenses__chart dd .expenses__chart-text {
+  height: 10%;
+  font-size: 0.8rem;
+  color: var(--main-color-brown-medium);
+}
+.expenses .expenses__main .expenses__chart dd.current-day .expenses__chart-fill {
+  background-color: var(--main-color-cyan);
+}
+.expenses .expenses__main .expenses__chart dd:hover .expenses__chart-value {
+  opacity: 100;
+}
+.expenses .expenses__main .expenses__this-month {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1.75em;
+  padding: 1.75em 0 0em 0;
+  border-top: 3px solid var(--main-color-background);
+}
+.expenses .expenses__main .expenses__this-month h3 {
+  font-size: 0.95rem;
+  color: var(--main-color-brown-medium);
+  margin-bottom: 0.4rem;
+}
+.expenses .expenses__main .expenses__this-month .expenses__monthly-total {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.expenses .expenses__main .expenses__this-month .expenses__monthly-total .sum-value {
+  color: var(--main-color-brown-dark);
+  font-size: 2.7rem;
+  font-weight: 600;
+}
+.expenses .expenses__main .expenses__this-month .expenses__monthly-total h3 {
+  margin-bottom: 0;
+}
+.expenses .expenses__main .expenses__this-month .expenses__monthly-change {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.expenses .expenses__main .expenses__this-month .expenses__monthly-change .sum-value {
+  color: var(--main-color-brown-dark);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.expenses .expenses__main .expenses__this-month .expenses__monthly-change h3 {
+  margin-bottom: 0.7rem;
+}
+
+@media screen and (max-width: 540px) {
+  :root {
+    --main-radius-small: .3rem;
+    --main-padding-header: 5vw 5vw;
+    --main-padding-main: 5vw 5vw;
+    font-size: 3vw;
+  }
+
+  .expenses {
+    width: 93vw;
+  }
+  .expenses .expenses__header h3 {
+    font-size: 1.4rem;
+  }
+  .expenses .expenses__header .sum-value {
+    font-size: 2.3rem;
+  }
+  .expenses .expenses__main {
+    margin-top: 3.5vw;
+  }
+  .expenses .expenses__main h2 {
+    font-size: 2.2rem;
+  }
+  .expenses .expenses__main .expenses__chart {
+    height: 65vw;
+  }
+  .expenses .expenses__main .expenses__chart dd .expenses__chart-value {
+    font-size: 1.4rem;
+    height: 12%;
+  }
+  .expenses .expenses__main .expenses__this-month h3 {
+    font-size: 1.35rem;
+  }
+  .expenses .expenses__main .expenses__this-month .expenses__monthly-change .sum-value {
+    font-size: 1.35rem;
+  }
+}
