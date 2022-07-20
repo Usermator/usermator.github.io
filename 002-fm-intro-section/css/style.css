@@ -57,7 +57,7 @@ body {
 .navbar__logo {
   height: 100%;
   aspect-ratio: 16/9;
-  background-image: url(../../images/logo.svg);
+  background-image: url(../images/logo.svg);
   background-repeat: no-repeat;
   background-position: center 55%;
 }
@@ -128,7 +128,7 @@ body {
   width: 0.6em;
   height: 0.6em;
   margin-left: 0.3em;
-  background-image: url(../../images/icon-arrow-down.svg);
+  background-image: url(../images/icon-arrow-down.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -136,7 +136,7 @@ body {
 }
 @media (max-width: 900px) {
   .navbar__menu > li span.navbar__mobile-arrow-up::after {
-    background-image: url(../../images/icon-arrow-up.svg);
+    background-image: url(../images/icon-arrow-up.svg);
   }
 }
 .navbar__menu > li a {
@@ -207,16 +207,16 @@ body {
   background-size: contain;
 }
 .navbar__menu .pretext-icon--todo::before {
-  background-image: url(../../images/icon-todo.svg);
+  background-image: url(../images/icon-todo.svg);
 }
 .navbar__menu .pretext-icon--calendar::before {
-  background-image: url(../../images/icon-calendar.svg);
+  background-image: url(../images/icon-calendar.svg);
 }
 .navbar__menu .pretext-icon--reminders::before {
-  background-image: url(../../images/icon-reminders.svg);
+  background-image: url(../images/icon-reminders.svg);
 }
 .navbar__menu .pretext-icon--planning::before {
-  background-image: url(../../images/icon-planning.svg);
+  background-image: url(../images/icon-planning.svg);
 }
 .navbar__mobile-toggle {
   display: none;
@@ -227,7 +227,7 @@ body {
     position: fixed;
     width: min(8.5vw, 3em);
     aspect-ratio: 1/1;
-    background-image: url(../../images/icon-menu.svg);
+    background-image: url(../images/icon-menu.svg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -237,7 +237,7 @@ body {
     cursor: pointer;
   }
   .navbar__mobile-toggle--on {
-    background-image: url(../../images/icon-close-menu.svg);
+    background-image: url(../images/icon-close-menu.svg);
   }
 }
 @media (max-width: 900px) {
