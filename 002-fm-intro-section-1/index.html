@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body data-toggle-role="content" data-toggle-group="1" data-toggle-class="shadow-overlay">
+
+  <nav class="navbar">
+    <div class="navbar__logo"><a href="#"></a></div>
+    <div data-toggle-role="content" data-toggle-group="1" data-toggle-class="navbar__mobile-hide-menu" class="navbar__wrapper navbar__mobile-hide-menu">
+      <ul class="navbar__menu">
+        <li class="show-more">
+          <span data-toggle-role="switch" data-toggle-group="2" data-toggle-class="navbar__mobile-arrow-up">Features</span>
+            <ul data-toggle-role="content" data-toggle-group="2" data-toggle-class="navbar__mobile-hide-items" class="navbar__mobile-hide-items">
+              <li><a href="" class="pretext-icon pretext-icon--todo">Todo List</a></li>
+              <li><a href="" class="pretext-icon pretext-icon--calendar">Calendar</a></li>
+              <li><a href="" class="pretext-icon pretext-icon--reminders">Reminders</a></li>
+              <li><a href="" class="pretext-icon pretext-icon--planning">Planning</a></li>
+            </ul>   
+        </li>
+        <li class="show-more">
+          <span data-toggle-role="switch" data-toggle-group="3" data-toggle-class="navbar__mobile-arrow-up">Company</span>
+            <ul data-toggle-role="content" data-toggle-group="3" data-toggle-class="navbar__mobile-hide-items" class="navbar__mobile-hide-items">
+              <li><a href="">History</a></li>
+              <li><a href="">Our Team</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>   
+        </li>
+        <li><a href="">Careers</a></li>
+        <li><a href="">About</a></li>
+      </ul>
+
+      <ul class="navbar__user">
+        <li><a href="">Login</a></li>
+        <li><a href="" class="outline-btn">Register</a></li>
+      </ul>
+    </div>
+
+    <div data-toggle-role="switch" data-toggle-group="1" data-toggle-class="navbar__mobile-toggle--on" class="navbar__mobile-toggle"></div>
+  </nav>
+
+  <main class="content-home">
+    <div class="content-home__text">
+      <h1>Make remote work</h1>
+      <p>Get your team in sync, no matter your location. Streamline processes, 
+        create team rituals, and watch productivity soar.</p>
+
+      <a href="" class="home-btn outline-btn"><span>Learn more</span></a>
+
+      <div class="content-home__clients">
+        <img class="client-larger" src="images/client-databiz.svg" alt="Databiz Logo">
+        <img src="images/client-audiophile.svg" alt="Audiophile Logo">
+        <img src="images/client-meet.svg" alt="Meet Logo">
+        <img src="images/client-maker.svg" alt="Maker Logo">
+      </div>
+    </div>
+    <div class="content-home__graphics">
+      <img src="images/image-hero-desktop.png" 
+      srcset="images/image-hero-mobile.png 760w, 
+      images/image-hero-desktop.png" alt="Snap – Make Remote Work">
+    </div>
+  </main>
+
+  
+
+  
+
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Maresh</a>.
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

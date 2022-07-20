@@ -1,0 +1,6 @@
+// colors
+$light-grey: hsl(0, 0%, 98%);
+$medium-grey: hsl(0, 0%, 41%);
+$dark-grey: hsl(0, 0%, 8%);
+
+$filter-darker: invert(0%) sepia(100%) saturate(100%) hue-rotate(355deg) brightness(0%) contrast(100%);

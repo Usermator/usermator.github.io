@@ -1,0 +1,17 @@
+@use '../abstracts/variables';
+
+.outline-btn{
+    display: inline-block;
+    padding: .625em 1.25em;
+    border: 2px solid variables.$medium-grey;
+    border-radius: .75em;
+    color: variables.$medium-grey;
+    font-weight: 500;
+    text-decoration: none;
+
+    &:hover{
+        border-color: variables.$dark-grey;
+        color: variables.$dark-grey;
+        background-color: variables.$light-grey;
+    }
+}
