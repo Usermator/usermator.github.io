@@ -105,6 +105,9 @@
   .advice-generator__button {
     width: 5em;
   }
+  .advice-generator__button:hover {
+    box-shadow: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
