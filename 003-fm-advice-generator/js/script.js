@@ -1,4 +1,4 @@
-let advice = "";
+let adv = "";
 
 const button = document.querySelector('[data-generator-role="trigger"]');
 const textField = document.querySelector('[data-generator-role="output"]');
@@ -8,7 +8,7 @@ button.addEventListener(('click'), el => {
 })
 
 function getAdvice(){
-    fetch('https://api.adviceslip.com/advice')
+    fetch('https://api.adviceslip.com/advice', {cache: "no-store"})
     .then((response) => response.json())
     .then((data) => {
         adv = data.slip.advice
@@ -17,5 +17,6 @@ function getAdvice(){
 }
 
 function changeQuote(message){
-    textField.innerText = `"${message}" ` 
+    textField.innerText = `"${message}"`;
+    adv = ""; 
 }
