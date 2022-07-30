@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+:root {
+  font-size: 16px;
+}
+
+.advice-homepage {
+  background-color: hsl(218deg, 23%, 16%);
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.attribution {
+  margin-top: 10em;
+  color: hsl(193deg, 38%, 86%);
+}
+.attribution a {
+  color: hsl(150deg, 100%, 66%) !important;
+}
+
+.advice-generator {
+  width: 540px;
+  min-height: 330px;
+  border-radius: 1em;
+  box-shadow: 10px 10px 75px -50px #000;
+  padding: 3em;
+  box-sizing: border-box;
+  background-color: hsl(217deg, 19%, 24%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  position: relative;
+}
+@media (max-width: 580px) {
+  .advice-generator {
+    width: calc(100vw - 40px);
+    height: fit-content;
+    padding: 1.5em;
+  }
+}
+.advice-generator__heading {
+  font-size: 0.875em;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  color: hsl(150deg, 100%, 66%);
+  margin: 0 0;
+}
+@media (max-width: 580px) {
+  .advice-generator__heading {
+    padding: 2em 0 0.75em 0;
+  }
+}
+.advice-generator__quote {
+  font-size: 1.75em;
+  color: hsl(193deg, 38%, 86%);
+  font-weight: 700;
+  margin: 0.875em 0 1.5em 0;
+  min-height: 110px;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 580px) {
+  .advice-generator__quote {
+    margin-bottom: 1em;
+  }
+}
+.advice-generator__underline {
+  height: 1em;
+  width: 100%;
+  background-image: url(../../images/pattern-divider-desktop.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 1.4375em;
+}
+@media (max-width: 580px) {
+  .advice-generator__underline {
+    background-image: url(../../images/pattern-divider-mobile.svg);
+    margin-bottom: 3em;
+    box-sizing: content-box;
+  }
+}
+.advice-generator__button {
+  position: absolute;
+  width: 4.375em;
+  aspect-ratio: 1/1;
+  border-radius: 100vmax;
+  background-color: hsl(150deg, 100%, 66%);
+  border: none;
+  bottom: -2.25em;
+  background-image: url(../../images/icon-dice.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 35%;
+  cursor: pointer;
+}
+.advice-generator__button:hover {
+  box-shadow: 1px 1px 30px 2px hsl(150deg, 100%, 66%);
+}
+@media (max-width: 580px) {
+  .advice-generator__button {
+    width: 5em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

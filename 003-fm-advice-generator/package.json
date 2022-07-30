@@ -1,0 +1,19 @@
+{
+  "name": "fm-003",
+  "version": "1.0.0",
+  "description": "FrontendMentor 003",
+  "main": "index.js",
+  "scripts": {
+    "scss": "sass --watch scss/_main.scss css/style.css"
+  },
+  "author": "Usermator",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.1.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "node-sass": "^7.0.1",
+    "sass": "^1.53.0"
+  }
+}

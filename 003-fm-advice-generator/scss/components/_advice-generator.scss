@@ -1,0 +1,91 @@
+@use '../abstracts' as abs;
+@use '../base';
+
+.advice-generator{
+
+    width: 540px;
+    min-height: 330px;
+    border-radius: 1em;
+    box-shadow: 10px 10px 75px -50px #000;
+    padding: 3em;
+    box-sizing: border-box;
+    background-color: abs.$blue-grey-dark;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    
+    @include abs.sm{
+        width: calc(100vw - 40px);
+        height: fit-content;
+        padding: 1.5em;
+    }
+
+    &__heading{
+        font-size: .875em;
+        font-weight: 500;
+        letter-spacing: .25em;
+        color: abs.$green-neon;
+        margin: 0 0;
+
+        @include abs.sm{
+            padding: 2em 0 .75em 0;
+        }
+    }
+
+    &__quote{
+        font-size: 1.75em;
+        color: abs.$cyan-light;
+        font-weight: 700;
+        margin: .875em 0 1.5em 0;
+        min-height: 110px;
+        display: flex;
+        align-items: center;
+
+        @include abs.sm{
+            margin-bottom: 1em;
+        }
+    }
+
+    &__underline{
+        height: 1em;
+        width: 100%;
+        background-image: url(../../images/pattern-divider-desktop.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-bottom: 1.4375em;
+
+
+        @include abs.sm{
+            background-image: url(../../images/pattern-divider-mobile.svg);
+            margin-bottom: 3em;
+            box-sizing: content-box;
+        }
+    }
+
+    &__button{
+        position: absolute;
+        width: 4.375em;
+        aspect-ratio: 1 / 1;
+        border-radius: 100vmax;
+        background-color: abs.$green-neon;
+        border: none;
+        bottom: -2.25em;
+        background-image: url(../../images/icon-dice.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 35%;
+        cursor: pointer;
+
+        &:hover{
+            box-shadow: 1px 1px 30px 2px abs.$green-neon;
+        }
+
+        @include abs.sm{
+            width: 5em;
+        }
+    }
+}
