@@ -71,7 +71,7 @@
 .advice-generator__underline {
   height: 1em;
   width: 100%;
-  background-image: url(../../images/pattern-divider-desktop.svg);
+  background-image: url(../images/pattern-divider-desktop.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -79,7 +79,7 @@
 }
 @media (max-width: 580px) {
   .advice-generator__underline {
-    background-image: url(../../images/pattern-divider-mobile.svg);
+    background-image: url(../images/pattern-divider-mobile.svg);
     margin-bottom: 3em;
     box-sizing: content-box;
   }
@@ -92,7 +92,7 @@
   background-color: hsl(150deg, 100%, 66%);
   border: none;
   bottom: -2.25em;
-  background-image: url(../../images/icon-dice.svg);
+  background-image: url(../images/icon-dice.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 35%;
